@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NegreteArt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        section {
+            padding: 40px;
+        }
+        .art-piece {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .art-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+        }
+        .button {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bienvenido a NegreteArt</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Sobre Mi</h2>
+        <p>Bienvenidos a mi página, donde puedes ver y comprar mi arte digital.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Galería de Arte</h2>
+        <div class="art-piece">
+            <!-- Art Piece 1 -->
+            <div class="art-item">
+                <img src="art1.jpg" alt="Arte 1" width="180px">
+                <h3>Obra 1</h3>
+                <a href="pagar.html?art=1" class="button">Comprar y Descargar</a>
+            </div>
+            <!-- Art Piece 2 -->
+            <div class="art-item">
+                <img src="art2.jpg" alt="Arte 2" width="180px">
+                <h3>Obra 2</h3>
+                <a href="pagar.html?art=2" class="button">Comprar y Descargar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Para cualquier consulta, no dudes en contactarme:</p>
+        <form action="mailto:miemail@ejemplo.com" method="POST">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 NegreteArt. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
